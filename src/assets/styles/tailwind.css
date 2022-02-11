@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white bg-xpDarkBlue lg:bg-xp h-screen;
+  }
+}
+
+@layer components {
+  .bar-top,
+  .bar-bottom {
+    @apply bg-xpDarkBlue relative;
+  }
+
+  .bar-top::after,
+  .bar-bottom::before {
+    @apply content-[""] block h-[2px] absolute  w-full;
+  }
+  .bar-top::after {
+    @apply bottom-0;
+    background: linear-gradient(
+      270deg,
+      #5b7edc 25%,
+      #fff 50%,
+      #5b7edc 75%,
+      #5b7edc 25%
+    );
+  }
+  .bar-bottom::before {
+    @apply top-0;
+    background: linear-gradient(
+      270deg,
+      #5b7edc 25%,
+      #fff 50%,
+      #5b7edc 75%,
+      #5b7edc 25%
+    );
+  }
+
+  .divider {
+    @apply w-[1px] h-full opacity-30;
+    background: linear-gradient(
+      180deg,
+      #5b7edc 5%,
+      #fff 50%,
+      #fff 75%,
+      #5b7edc 85%,
+      #5b7edc 100%
+    );
+  }
+  .user-wrapper {
+    background: linear-gradient(to right, #1545a7 30%, #5b7edc);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .blue-screen p {
+    @apply mb-5;
+  }
+}
+
+@layer utilities {
+}
