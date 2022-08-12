@@ -1,24 +1,9 @@
-# xp-css
+# XP Login Screen
 
-## Project setup
-```
-npm install
-```
+## What was the my task?
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Remembering the old times, old but gold times
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## What did I do?
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+I created Windows XP login screen using TailwindCSS.
